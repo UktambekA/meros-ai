@@ -1,0 +1,440 @@
+<!doctype html>
+<html lang="uz" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Meros.ai — AR + AI meros gidi</title>
+<meta name="description" content="Meros.ai — O‘zbekiston tarixiy obidalari uchun AR + AI gid. Kamerani binoga qarating: ilova uni taniydi, bezaklarini tushuntiradi, 150 yil oldingi suratini ko‘rsatadi va savollarga manba bilan javob beradi. 43 obida, 5 shahar, 5 til.">
+<meta name="theme-color" content="#0277B6">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Meros.ai — obidalar sizga o‘z tilingizda gapiradi">
+<meta property="og:description" content="AR + AI meros gidi: 43 obida, 5 shahar, 5 til (jumladan indonez va arab). Internetsiz ham ishlaydi.">
+<meta property="og:image" content="https://uktambeka.github.io/meros-ai/og.png">
+<meta property="og:locale" content="uz_UZ">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/svg+xml" href="./favicon.svg">
+<!-- Mahsulot sahifasi (UzCombinator arizasi, 2026-10). Matnlar FAQAT qurilgan
+     funksiyalarni tasvirlaydi; skrinshotlar — haqiqiy ilova (shots/, Android
+     emulator, lokal backend). Rasmlar: Wikimedia Commons (CC) — footer
+     attributsiyasi olib tashlanmasin. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./styles.css">
+<script>document.documentElement.classList.remove('no-js');</script>
+<script src="https://code.iconify.design/iconify-icon/3.0.0/iconify-icon.min.js" defer></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MobileApplication",
+  "name": "Meros.ai",
+  "applicationCategory": "TravelApplication",
+  "operatingSystem": "Android, iOS",
+  "inLanguage": ["uz", "ru", "en", "id", "ar"],
+  "description": "O‘zbekiston tarixiy obidalari uchun AR + AI gid: obidani tanish, vaqt mashinasi, ovozli gid, manbali savol-javob, sayohat rejasi. Internetsiz ham ishlaydi."
+}
+</script>
+</head>
+<body>
+
+<!-- Koshin yulduzi — belgi sprite (viewBox 120, 3 qatlam; docs/brend-qollanma.md §01) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="mark-light" viewBox="0 0 120 120">
+      <g><rect x="18" y="18" width="84" height="84" rx="6" fill="#0277B6"/><rect x="18" y="18" width="84" height="84" rx="6" fill="#0277B6" transform="rotate(45 60 60)"/></g>
+      <g><rect x="34" y="34" width="52" height="52" rx="4" fill="#F8FAFC"/><rect x="34" y="34" width="52" height="52" rx="4" fill="#F8FAFC" transform="rotate(45 60 60)"/></g>
+      <g><rect x="45" y="45" width="30" height="30" rx="3" fill="#D99B29"/><rect x="45" y="45" width="30" height="30" rx="3" fill="#D99B29" transform="rotate(45 60 60)"/></g>
+    </symbol>
+    <symbol id="mark-card" viewBox="0 0 120 120">
+      <g><rect x="18" y="18" width="84" height="84" rx="6" fill="#0277B6"/><rect x="18" y="18" width="84" height="84" rx="6" fill="#0277B6" transform="rotate(45 60 60)"/></g>
+      <g><rect x="34" y="34" width="52" height="52" rx="4" fill="#FFFFFF"/><rect x="34" y="34" width="52" height="52" rx="4" fill="#FFFFFF" transform="rotate(45 60 60)"/></g>
+      <g><rect x="45" y="45" width="30" height="30" rx="3" fill="#D99B29"/><rect x="45" y="45" width="30" height="30" rx="3" fill="#D99B29" transform="rotate(45 60 60)"/></g>
+    </symbol>
+    <symbol id="mark-brand" viewBox="0 0 120 120">
+      <g><rect x="18" y="18" width="84" height="84" rx="6" fill="#FFFFFF"/><rect x="18" y="18" width="84" height="84" rx="6" fill="#FFFFFF" transform="rotate(45 60 60)"/></g>
+      <g><rect x="34" y="34" width="52" height="52" rx="4" fill="#0277B6"/><rect x="34" y="34" width="52" height="52" rx="4" fill="#0277B6" transform="rotate(45 60 60)"/></g>
+      <g><rect x="45" y="45" width="30" height="30" rx="3" fill="#D99B29"/><rect x="45" y="45" width="30" height="30" rx="3" fill="#D99B29" transform="rotate(45 60 60)"/></g>
+    </symbol>
+    <symbol id="mark-mono" viewBox="0 0 120 120">
+      <g><rect x="18" y="18" width="84" height="84" rx="6" fill="currentColor"/><rect x="18" y="18" width="84" height="84" rx="6" fill="currentColor" transform="rotate(45 60 60)"/></g>
+    </symbol>
+  </defs>
+</svg>
+
+<a class="skip-link" href="#asosiy">Asosiy kontentga o‘tish</a>
+
+<!-- NAV -->
+<header class="nav">
+  <nav class="container nav__inner" aria-label="Asosiy navigatsiya">
+    <a class="brand" href="#" aria-label="Meros.ai — bosh sahifa">
+      <svg class="brand__mark" width="32" height="32" aria-hidden="true"><use href="#mark-light"/></svg>
+      <span class="wordmark">Meros<span class="ai">.ai</span></span>
+    </a>
+    <div class="nav__links">
+      <a class="nav__link" href="#muammo">Muammo</a>
+      <a class="nav__link" href="#qanday">Qanday ishlaydi</a>
+      <a class="nav__link" href="#ziyorat">Ziyorat</a>
+      <a class="nav__link" href="#hamkor">Hamkorlar</a>
+      <a class="btn btn--primary btn--sm" href="#holat"><iconify-icon icon="lucide:clipboard-check" width="16"></iconify-icon><span>Loyiha holati</span></a>
+    </div>
+    <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-mobile" aria-label="Menyuni ochish">
+      <iconify-icon icon="lucide:menu" width="22"></iconify-icon>
+    </button>
+  </nav>
+  <div class="nav__mobile" id="nav-mobile">
+    <a href="#muammo">Muammo</a>
+    <a href="#qanday">Qanday ishlaydi</a>
+    <a href="#ziyorat">Ziyorat</a>
+    <a href="#hamkor">Hamkorlar</a>
+    <a class="btn btn--primary" href="#holat"><iconify-icon icon="lucide:clipboard-check" width="18"></iconify-icon><span>Loyiha holati</span></a>
+  </div>
+</header>
+
+<main id="asosiy">
+
+  <!-- HERO -->
+  <section class="hero" aria-labelledby="hero-title">
+    <svg class="hero__pattern" width="520" height="520" aria-hidden="true" style="color:#0277B6"><use href="#mark-mono"/></svg>
+    <div class="container hero__grid">
+      <div class="hero__copy">
+        <span class="pill pill--accent"><iconify-icon icon="lucide:landmark" width="13"></iconify-icon><span>Samarqand · Buxoro · Xiva · Toshkent · Termiz</span></span>
+        <h1 class="h1" id="hero-title">Obidalar sizga<br>o‘z tilingizda gapiradi.</h1>
+        <p class="lead">Meros.ai — O‘zbekiston tarixiy obidalari uchun AR + AI gid. Kamerani binoga qarating: ilova uni taniydi, ko‘rinib turgan bezaklarni tushuntiradi, 150 yil oldingi suratini ko‘rsatadi va savolingizga manba bilan javob beradi.</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#qanday"><iconify-icon icon="lucide:play-circle" width="20"></iconify-icon><span>Qanday ishlaydi</span></a>
+          <a class="btn btn--ink" href="#hamkor"><iconify-icon icon="lucide:handshake" width="20"></iconify-icon><span>Hamkorlik</span></a>
+        </div>
+        <ul class="hero__facts" aria-label="Asosiy raqamlar">
+          <li class="fact"><span class="fact__icon fact__icon--accent"><iconify-icon icon="lucide:landmark" width="17"></iconify-icon></span><span>43 obida · 5 shahar</span></li>
+          <li class="fact"><span class="fact__icon fact__icon--primary"><iconify-icon icon="lucide:languages" width="17"></iconify-icon></span><span>O‘zbek · Rus · Ingliz · Indonez · Arab</span></li>
+          <li class="fact"><span class="fact__icon fact__icon--success"><iconify-icon icon="lucide:cloud-off" width="17"></iconify-icon></span><span>Internetsiz ham ishlaydi</span></li>
+        </ul>
+      </div>
+      <div class="hero__visual">
+        <figure class="device">
+          <img src="./shots/hero.webp" alt="Meros.ai ilovasi: Ulug‘bek madrasasi sahifasi" width="720" height="1600" fetchpriority="high">
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- MUAMMO -->
+  <section class="section container" id="muammo" aria-labelledby="muammo-title">
+    <div class="section-head reveal">
+      <span class="eyebrow">Muammo</span>
+      <h2 class="h2" id="muammo-title">Turist binoni ko‘radi, lekin tarixini bilmay ketadi</h2>
+      <p class="body">2025-yilda O‘zbekistonga 11,7 mln xorijiy turist keldi. Registon yoki Imom Buxoriy majmuasi oldida turganda ularning tanlovi hali ham uchta: gid yollash, qisqa yozuvni o‘qish yoki internetdan qidirish.</p>
+    </div>
+    <div class="problems">
+      <article class="problem reveal">
+        <span class="problem__icon"><iconify-icon icon="lucide:user-x" width="24"></iconify-icon></span>
+        <h3>Gid hamma uchun emas</h3>
+        <p>Shaxsiy gid qimmat va band. Indonez, malay yoki arab tilida gapiradigan gid esa deyarli yo‘q.</p>
+      </article>
+      <article class="problem reveal" data-delay="1">
+        <span class="problem__icon"><iconify-icon icon="lucide:book-x" width="24"></iconify-icon></span>
+        <h3>Ziyoratchi o‘z tilida ma’lumot topa olmaydi</h3>
+        <p>Indoneziya va Malayziyadan aynan Imom Buxoriy, Imom Termiziy, Naqshband merosi uchun kelishadi. Ular haqida ishonchli, joyida ishlaydigan kontent ularning tilida yo‘q.</p>
+      </article>
+      <article class="problem reveal" data-delay="2">
+        <span class="problem__icon"><iconify-icon icon="lucide:users" width="24"></iconify-icon></span>
+        <h3>Tur operator har sayyohga gid bera olmaydi</h3>
+        <p>30 kishilik guruhda 3–4 xil til bo‘ladi. Gid bitta tilda gapiradi, qolganlar faqat suratga tushadi.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- QANDAY ISHLAYDI -->
+  <section class="section--white" id="qanday" aria-labelledby="qanday-title">
+    <div class="container section">
+      <div class="section-head reveal">
+        <span class="eyebrow">Qanday ishlaydi</span>
+        <h2 class="h2" id="qanday-title">Ilova ichidan: haqiqiy ekranlar</h2>
+        <p class="body">Quyidagi rasmlar — ishlab turgan ilovaning skrinshotlari (Android), maket emas. Ilova mehmon rejimida ochiladi: ro‘yxatdan o‘tish faqat reja yoki sevimlilarni saqlash uchun kerak.</p>
+      </div>
+
+      <div class="walk">
+
+        <article class="walk-step reveal">
+          <div class="walk-step__copy">
+            <span class="walk-step__num">1</span>
+            <h3>Katalog: 5 shahar, 43 obida</h3>
+            <p>Ilova ochilishi bilan yaqin atrofdagi obidalar masofasi bilan chiqadi. Shahar va tur bo‘yicha saralash mumkin: tarixiy obidalar, ziyoratgohlar, muzeylar. Kontent bir marta yuklanadi va keyin internetsiz ochiladi.</p>
+          </div>
+          <div class="walk-step__shots">
+            <figure class="device"><img src="./shots/katalog.webp" alt="Katalog ekrani: kunning kashfiyoti va yaqin joylar" width="720" height="1600" loading="lazy"></figure>
+          </div>
+        </article>
+
+        <article class="walk-step reveal">
+          <div class="walk-step__copy">
+            <span class="walk-step__num">2</span>
+            <h3>AR Skan: kamerani binoga qarating</h3>
+            <p>Sun’iy intellekt suratdagi obidani 5 km radiusdagi bazadan tanlaydi va binoda ko‘rinib turgan elementlarni (peshtoq, girih naqsh, minoralar) belgilaydi. Pastda shu bino bo‘yicha hikoya, 1872-yil ko‘rinishi va elementlar chiqadi.</p>
+            <div class="note"><iconify-icon icon="lucide:shield-check" width="18"></iconify-icon><span>AI matn to‘qimaydi: u faqat bazadagi obida va elementlardan birini tanlaydi, foydalanuvchi o‘qiydigan matn esa manbali bazadan olinadi. Ishonch 50% dan past bo‘lsa, ilova «Balki: …» variantlarini taklif qiladi. AI yoki internet bo‘lmasa, GPS bo‘yicha eng yaqin obidani ko‘rsatadi. Skrinshotda aynan shu holat.</span></div>
+          </div>
+          <div class="walk-step__shots">
+            <figure class="device"><img src="./shots/ar-skan.webp" alt="AR Skan: Ulug‘bek madrasasi aniqlandi" width="720" height="1600" loading="lazy"></figure>
+          </div>
+        </article>
+
+        <article class="walk-step reveal">
+          <div class="walk-step__copy">
+            <span class="walk-step__num">3</span>
+            <h3>Vaqt mashinasi: 150 yil oldin bu bino qanday edi</h3>
+            <p>Kadr ustiga 1872-yilgi «Turkiston albomi» va 1911-yilgi Prokudin-Gorskiy suratlari qo‘yiladi. Slayder bilan «hozir» va «o‘shanda»ni solishtirasiz. Ilova suratchi turgan nuqtani ham ko‘rsatadi: o‘sha joyga borsangiz, ko‘rinish aynan ustma-ust tushadi.</p>
+            <div class="note"><iconify-icon icon="lucide:info" width="18"></iconify-icon><span>Hozir 7 obida uchun jamoat mulki bo‘lgan tarixiy suratlar bor. 3D rekonstruksiya keyingi bosqichda.</span></div>
+          </div>
+          <div class="walk-step__shots">
+            <figure class="device"><img src="./shots/vaqt-mashinasi.webp" alt="Vaqt mashinasi: 1872-yilgi surat hozirgi ko‘rinish ustida" width="720" height="1600" loading="lazy"></figure>
+          </div>
+        </article>
+
+        <article class="walk-step reveal">
+          <div class="walk-step__copy">
+            <span class="walk-step__num">4</span>
+            <h3>Tarix sahifalari: bino — shaxs — voqea</h3>
+            <p>Har bir obida uni qurgan, unda o‘qigan va dars bergan shaxslar, sulolalar va voqealar bilan bog‘langan. Ulug‘bek madrasasidan Ali Qushchiga, undan rasadxonaga o‘tasiz. Graf hozir 70 ta shaxs, voqea va sulolani 215 ta bog‘lanish bilan birlashtiradi.</p>
+            <p>«Nimaga qarash kerak» bo‘limi joyida e’tibor berish kerak bo‘lgan bezak va qismlarni ko‘rsatadi, har biri manbasi bilan.</p>
+            <div class="note"><iconify-icon icon="lucide:badge-info" width="18"></iconify-icon><span>Har bir sahifada tekshiruv holati ochiq yoziladi: «Manbalar asosida tayyorlangan, mutaxassis tekshiruvi kutilmoqda».</span></div>
+          </div>
+          <div class="walk-step__shots">
+            <figure class="device"><img src="./shots/tarix.webp" alt="Obida sahifasi: tarix sahifalari va nimaga qarash kerak" width="720" height="1600" loading="lazy"></figure>
+          </div>
+        </article>
+
+        <article class="walk-step reveal">
+          <div class="walk-step__copy">
+            <span class="walk-step__num">5</span>
+            <h3>Gidga savol: javob manbasi bilan</h3>
+            <p>Hikoyani tinglab turib savol berish mumkin. Javob faqat tekshirilgan matn bo‘laklaridan tuziladi va har birida manba ko‘rsatiladi: kitob, muallif, yil. Bepul rejimda kuniga 3 ta savol, pass bilan cheksiz.</p>
+            <div class="note"><iconify-icon icon="lucide:shield-check" width="18"></iconify-icon><span>AI ishlamasa ham ilova manbali matndan javob qaytaradi (skrinshotda «Manba matnidan» belgisi). Internet umuman bo‘lmasa, tayyor savol-javoblar ochiladi.</span></div>
+          </div>
+          <div class="walk-step__shots">
+            <figure class="device"><img src="./shots/savol.webp" alt="Gidga savol: javob va manba" width="720" height="1600" loading="lazy"></figure>
+          </div>
+        </article>
+
+        <article class="walk-step reveal">
+          <div class="walk-step__copy">
+            <span class="walk-step__num">6</span>
+            <h3>Tayyor sayohat rejalari</h3>
+            <p>Kurator tuzgan bir va ko‘p kunlik rejalar: soatma-soat marshrut, transport, taxminiy narx va byudjet taqsimoti. Ziyorat rejalariga namoz to‘xtashlari avtomatik qo‘shiladi. Rejani saqlash mumkin, tur operatorga so‘rov yuborish ham mumkin. To‘lov ilovada emas, operator bilan amalga oshiriladi.</p>
+          </div>
+          <div class="walk-step__shots">
+            <figure class="device"><img src="./shots/reja.webp" alt="«Samarqand allomalari — 2 kun» rejasi" width="720" height="1600" loading="lazy"></figure>
+          </div>
+        </article>
+
+        <article class="walk-step reveal">
+          <div class="walk-step__copy">
+            <span class="walk-step__num">7</span>
+            <h3>Sayyohning o‘z tilida</h3>
+            <p>Interfeys va kontent 5 tilda: o‘zbek, rus, ingliz, indonez va arab. Arab tilida ekran to‘liq o‘ngdan chapga aylanadi. Til almashganda telefondagi kesh o‘chirilmaydi, matnlar joyida yangilanadi.</p>
+            <div class="note"><iconify-icon icon="lucide:info" width="18"></iconify-icon><span>Indonez va arab matnlari hozircha mashina qoralamasi, ilovada shunday deb belgilangan. Ona tilida so‘zlashuvchi tarjimon tekshiruvi rejada.</span></div>
+          </div>
+          <div class="walk-step__shots">
+            <figure class="device device--pair"><img src="./shots/indonez.webp" alt="Imom Buxoriy majmuasi sahifasi indonez tilida" width="720" height="1600" loading="lazy"></figure>
+            <figure class="device device--pair"><img src="./shots/arab.webp" alt="Katalog arab tilida, o‘ngdan chapga" width="720" height="1600" loading="lazy"></figure>
+          </div>
+        </article>
+
+      </div>
+      <p class="walk__caption">Skrinshotlar 2026-yil oktabrda Android emulyatorida, sinov serveri bilan olingan. AR Skan uchun telefon galereyasidagi surat ishlatilgan (ilovadagi «galereyadan» funksiyasi orqali).</p>
+    </div>
+  </section>
+
+  <!-- ZIYORAT -->
+  <section class="section container" id="ziyorat" aria-labelledby="ziyorat-title">
+    <div class="split reveal">
+      <div class="split__copy">
+        <span class="eyebrow">Ziyorat uslubi</span>
+        <h2 class="h2" id="ziyorat-title">Musulmon sayyoh uchun — alohida ilova emas, bitta tugma</h2>
+        <p class="body">Profilda «Sayohat uslubi → Ziyorat» tanlansa, ilova fokusini o‘zgartiradi: katalog o‘sha, lekin ziyorat obyektlari oldinga chiqadi. Butun katalog ikkala uslubda ham ochiq.</p>
+        <ul class="checks">
+          <li><iconify-icon icon="lucide:moon-star" width="18"></iconify-icon><span><b>Namoz vaqtlari</b> — qurilmada, internetsiz hisoblanadi; sayohat rejasiga Peshin va Asr to‘xtashlari qo‘shiladi.</span></li>
+          <li><iconify-icon icon="lucide:badge-check" width="18"></iconify-icon><span><b>Halol va namozxona belgilari</b> obida, restoran va mehmonxona sahifalarida.</span></li>
+          <li><iconify-icon icon="lucide:scroll-text" width="18"></iconify-icon><span><b>Allomalar</b> — Imom Buxoriy, Imom Termiziy, Imom Moturidiy, Naqshband: hayoti, asarlari, qaysi obida bilan bog‘liqligi.</span></li>
+          <li><iconify-icon icon="lucide:languages" width="18"></iconify-icon><span><b>Indonez va arab tillari</b> (arabcha o‘ngdan chapga yoziladi) — 43 obida, AR elementlar va sayohat rejalari.</span></li>
+          <li><iconify-icon icon="lucide:map" width="18"></iconify-icon><span><b>Tayyor ziyorat rejalari</b>, masalan «Samarqand allomalari — 2 kun».</span></li>
+        </ul>
+      </div>
+      <div class="split__visual">
+        <figure class="device device--sm"><img src="./shots/ziyorat.webp" alt="Ziyorat uslubi: namoz vaqtlari va ziyorat obyektlari" width="720" height="1600" loading="lazy"></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- OFFLINE -->
+  <section class="section container" style="padding-top:0" aria-labelledby="offline-title">
+    <div class="offline reveal">
+      <div class="offline__copy">
+        <span class="pill pill--success-dark"><iconify-icon icon="lucide:cloud-off" width="14"></iconify-icon><span>Offline-first</span></span>
+        <h2 class="h2" id="offline-title">Majmua ichida internet yo‘q bo‘lsa ham ishlaydi</h2>
+        <p class="body">Kontent bir marta yuklanadi va telefonda saqlanadi. Saqlangan reja va o‘zgarishlar navbatga yoziladi, internet qaytgach o‘zi yuboriladi.</p>
+        <div class="offline__chips">
+          <span class="chip">Katalog va hikoyalar</span>
+          <span class="chip">Audio boblar</span>
+          <span class="chip">Vaqt mashinasi</span>
+          <span class="chip">Namoz vaqtlari</span>
+          <span class="chip">Geo-yorliqlar (GPS + kompas)</span>
+          <span class="chip">Ko‘rilgan xarita hududi</span>
+        </div>
+        <p class="offline__note">Internet kerak bo‘ladiganlar: AI orqali obidani suratdan tanish va AI savol-javob. Internet bo‘lmasa, ilova eng yaqin obidani GPS bo‘yicha ko‘rsatadi va tayyor savol-javoblarni ochadi.</p>
+      </div>
+      <div class="offline__visual">
+        <img class="offline__img" src="https://commons.wikimedia.org/wiki/Special:FilePath/RegistanSquare%20Samarkand.jpg?width=1000" alt="" loading="lazy" width="1000" height="667">
+        <div class="offline__shade"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HAMKORLAR -->
+  <section class="section--white" id="hamkor" aria-labelledby="hamkor-title">
+    <div class="container section">
+      <div class="section-head reveal">
+        <span class="eyebrow">Hamkorlar va daromad</span>
+        <h2 class="h2" id="hamkor-title">Sayyohga tur operator, majmua va mehmonxona orqali yetamiz</h2>
+        <p class="body">Meros bron va chipta sotmaydi: mehmonxona, transport va to‘lov — milliy turizm platformasi va operatorlarning ishi. Biz obida oldidagi tajribani beramiz va ular bilan ishlaymiz.</p>
+      </div>
+      <div class="partners">
+        <article class="partner reveal">
+          <span class="partner__icon"><iconify-icon icon="lucide:briefcase" width="26"></iconify-icon></span>
+          <h3>Tur operatorlar</h3>
+          <p>Guruhdagi har bir sayyohga pass kodi beriladi — har kim o‘z tilida eshitadi. Operatorning o‘z kabineti, tayyor ko‘p kunlik rejalari va sayyohlardan keladigan so‘rovlar ro‘yxati bor.</p>
+        </article>
+        <article class="partner reveal" data-delay="1">
+          <span class="partner__icon"><iconify-icon icon="lucide:building-2" width="26"></iconify-icon></span>
+          <h3>Muzey va majmualar</h3>
+          <p>Kirishdagi QR kod obida sahifasini ilovada yoki brauzerda ochadi. Litsenziya asosida kontentni admin panelda o‘zi boshqaradi va tashrif statistikasini ko‘radi.</p>
+        </article>
+        <article class="partner reveal" data-delay="2">
+          <span class="partner__icon"><iconify-icon icon="lucide:hotel" width="26"></iconify-icon></span>
+          <h3>Mehmonxonalar</h3>
+          <p>Mehmonga shahar pass’ini sovg‘a yoki qo‘shimcha xizmat sifatida beradi. Restoran va mehmonxonalar xaritada halol va namozxona belgilari bilan chiqadi.</p>
+        </article>
+      </div>
+      <div class="pricing reveal">
+        <div class="price">
+          <span class="eyebrow">Bepul</span>
+          <p>Katalog, xarita, qisqa ma’lumot, hikoyaning birinchi boblari va kunlik cheklangan AI savollar.</p>
+        </div>
+        <div class="price">
+          <span class="eyebrow">Shahar / O‘zbekiston pass</span>
+          <p>To‘liq audio gid, cheksiz AI savol, AR va vaqt mashinasi, offline paket. Rejalashtirilgan narx $5–15.</p>
+        </div>
+        <div class="price">
+          <span class="eyebrow">B2B litsenziya</span>
+          <p>Operator, majmua va mehmonxonalar uchun: pass kodlar partiyasi, o‘z brendi, statistika.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOLAT -->
+  <section class="section container" id="holat" aria-labelledby="holat-title">
+    <div class="section-head reveal">
+      <span class="eyebrow">Loyiha holati · 2026-oktabr</span>
+      <h2 class="h2" id="holat-title">Nima tayyor, nima qolgan</h2>
+      <p class="body">Bosqich — MVP. Mahsulot to‘liq ishlaydi, lekin hali do‘konlarda emas va real foydalanuvchilar bilan sinalmagan. Android ilova (APK) saralashdan keyin namoyish etiladi.</p>
+    </div>
+    <div class="status">
+      <div class="status__col reveal">
+        <h3><iconify-icon icon="lucide:circle-check" width="20"></iconify-icon><span>Qurilgan</span></h3>
+        <ul>
+          <li>Mobil ilova (Android va iOS, bitta kod bazasi) — 5 tab: Katalog, Xarita, AR Skan, Reja, Profil</li>
+          <li>Server API, kontent uchun admin panel (CMS) va qidiruv tizimlari uchun veb-versiya</li>
+          <li>43 obida, 35 ta AR element, 7 obida uchun vaqt mashinasi suratlari, allomalar va sulolalar grafi</li>
+          <li>5 til, jumladan arab (o‘ngdan chapga)</li>
+          <li>Pass va litsenziya tizimi, hamkor kabineti, anonim statistika</li>
+          <li>450 dan ortiq avtomatik test, xavfsizlik ko‘rigi o‘tkazilgan</li>
+        </ul>
+      </div>
+      <div class="status__col status__col--next reveal" data-delay="1">
+        <h3><iconify-icon icon="lucide:circle-dashed" width="20"></iconify-icon><span>Keyingi qadamlar</span></h3>
+        <ul>
+          <li>Kontentni tarixchi tekshiruvidan o‘tkazish — hozir ochiq manbalar asosidagi qoralama</li>
+          <li>Indonez va arab tarjimalarini ona tilida so‘zlashuvchi tarjimon tekshiruvidan o‘tkazish — hozir mashina qoralamasi</li>
+          <li>Samarqandda 1–3 tur operator bilan pilot: birinchi guruhlar va birinchi to‘lovlar</li>
+          <li>Google Play va App Store’ga chiqarish</li>
+          <li>3D rekonstruksiya (hozir tarixiy suratlar ishlatiladi)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ASOSCHI -->
+  <section class="section container" style="padding-top:0" aria-labelledby="asoschi-title">
+    <div class="cta reveal">
+      <svg class="cta__pattern cta__pattern--tl" width="300" height="300" aria-hidden="true" style="color:#fff"><use href="#mark-mono"/></svg>
+      <svg class="cta__pattern cta__pattern--br" width="300" height="300" aria-hidden="true" style="color:#fff"><use href="#mark-mono"/></svg>
+      <svg width="60" height="60" aria-hidden="true"><use href="#mark-brand"/></svg>
+      <h2 class="h2" id="asoschi-title">Asoschi — O‘ktambek Amonov</h2>
+      <p class="cta__lead">Mahsulotni g‘oyadan ishlaydigan MVP’gacha 8 haftada yakka o‘zi qurgan: mobil ilova, server, admin panel va kontent.</p>
+      <!--CONTACT-->
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer__main">
+    <div class="footer__brand">
+      <a class="brand" href="#" aria-label="Meros.ai">
+        <svg class="brand__mark" width="28" height="28" aria-hidden="true"><use href="#mark-card"/></svg>
+        <span class="wordmark wordmark--sm">Meros<span class="ai">.ai</span></span>
+      </a>
+      <p>O‘zbekiston tarixiy obidalari uchun AR + AI gid.</p>
+    </div>
+    <div class="footer__cols">
+      <nav class="footer__col" aria-label="Sahifa">
+        <span class="eyebrow">Sahifa</span>
+        <a href="#muammo">Muammo</a>
+        <a href="#qanday">Qanday ishlaydi</a>
+        <a href="#hamkor">Hamkorlar</a>
+        <a href="#holat">Loyiha holati</a>
+      </nav>
+      <div class="footer__col">
+        <span class="eyebrow">Tillar</span>
+        <span lang="uz">O‘zbek</span>
+        <span lang="ru">Русский</span>
+        <span lang="en">English</span>
+        <span lang="id">Bahasa Indonesia</span>
+        <span lang="ar" dir="rtl">العربية</span>
+      </div>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <div class="container">
+      <span>© 2026 Meros.ai</span>
+      <span>Tarixiy suratlar va fotosuratlar: Wikimedia Commons (CC / jamoat mulki) · Xarita: OpenStreetMap (ODbL)</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  // Mobil menyu
+  var toggle = document.querySelector('.nav__toggle'), menu = document.getElementById('nav-mobile');
+  function setMenu(open) {
+    menu.classList.toggle('is-open', open);
+    toggle.setAttribute('aria-expanded', String(open));
+    toggle.setAttribute('aria-label', open ? 'Menyuni yopish' : 'Menyuni ochish');
+    toggle.firstElementChild.setAttribute('icon', open ? 'lucide:x' : 'lucide:menu');
+  }
+  toggle.addEventListener('click', function () { setMenu(!menu.classList.contains('is-open')); });
+  menu.addEventListener('click', function (e) { if (e.target.closest('a')) setMenu(false); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') setMenu(false); });
+
+  // Scroll-reveal (reduced-motion'da CSS o'zi o'chiradi)
+  var items = document.querySelectorAll('.reveal');
+  if (!('IntersectionObserver' in window)) { items.forEach(function (el) { el.classList.add('is-in'); }); return; }
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add('is-in'); io.unobserve(en.target); } });
+  }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
+  items.forEach(function (el) { io.observe(el); });
+})();
+</script>
+</body>
+</html>

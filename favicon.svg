@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <!-- Meros.ai koshin yulduzi — 24px qoidasi: kesim yo'q (docs/brend-qollanma.md §03) -->
+  <g><rect x="18" y="18" width="84" height="84" rx="6" fill="#0277B6"/><rect x="18" y="18" width="84" height="84" rx="6" fill="#0277B6" transform="rotate(45 60 60)"/></g>
+  <g><rect x="45" y="45" width="30" height="30" rx="3" fill="#FFFFFF"/><rect x="45" y="45" width="30" height="30" rx="3" fill="#FFFFFF" transform="rotate(45 60 60)"/></g>
+</svg>
